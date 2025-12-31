@@ -18,3 +18,16 @@ const navSlide = () => {
       form.reset();
     }
   };
+
+  function openImage(src) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = src;
+}
+
+function closeImage() {
+  const modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+}
